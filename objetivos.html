@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Objetivos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Objetivos</h1>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<div class="menu-overlay" id="menu">
+  <div class="close-btn" onclick="toggleMenu()">✖</div>
+  <ul>
+    <li><a href="introduccion.html" onclick="toggleMenu()">Introducción</a></li>
+    <li><a href="objetivos.html" onclick="toggleMenu()">Objetivos</a></li>
+    <li><a href="descripcion-general.html" onclick="toggleMenu()">Descripción General</a></li>
+    <li><a href="aplicaciones-ofimaticas.html" onclick="toggleMenu()">Aplicaciones Ofimáticas</a></li>
+    <li><a href="glosario.html" onclick="toggleMenu()">Glosario</a></li>
+    <li><a href="practica.html" onclick="toggleMenu()">Práctica</a></li>
+  </ul>
+</div>
+
+<section class="contenido">
+
+  <!-- OBJETIVO GENERAL -->
+  <div class="objetivo-general">
+    <h2>Objetivo General</h2>
+    <p class="justify">
+      Desarrollar un sitio web educativo denominado <b>“Introducción a la Ofimática”</b>
+      que facilite el acceso a información clara, organizada y accesible sobre la
+      ofimática y el uso básico de Microsoft Word, Excel y PowerPoint, fortaleciendo
+      las competencias digitales de los usuarios.
+    </p>
+  </div>
+
+  <!-- OBJETIVOS ESPECÍFICOS -->
+  <h3 class="titulo-especificos">Objetivos Específicos</h3>
+
+  <div class="objetivos-grid">
+    <div class="objetivo-card">
+      <span>✔</span>
+      <p>Organizar y estructurar contenidos educativos sobre ofimática y aplicaciones ofimáticas.</p>
+    </div>
+
+    <div class="objetivo-card">
+      <span>✔</span>
+      <p>Diseñar un sitio web con navegación sencilla, clara e intuitiva.</p>
+    </div>
+
+    <div class="objetivo-card">
+      <span>✔</span>
+      <p>Implementar el sitio utilizando tecnologías web como HTML, CSS y JavaScript.</p>
+    </div>
+
+    <div class="objetivo-card">
+      <span>✔</span>
+      <p>Incorporar imágenes, gráficos y recursos visuales con fines educativos.</p>
+    </div>
+
+    <div class="objetivo-card">
+      <span>✔</span>
+      <p>Integrar encuestas mediante Google Forms para apoyar el aprendizaje y análisis de conocimientos.</p>
+    </div>
+  </div>
+
+  <!-- IMAGEN -->
+  <div class="imagen-objetivo">
+    <img src="images/gif-objetivo.gif" alt="Objetivos de la ofimática">
+  </div>
+
+</section>
+
+<script src="js/menu.js"></script>
+</body>
+</html>
+

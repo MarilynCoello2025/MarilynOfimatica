@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Descripción General</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Descripción General del Sitio Web</h1>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<div class="menu-overlay" id="menu">
+  <div class="close-btn" onclick="toggleMenu()">✖</div>
+  <ul>
+    <li><a href="introduccion.html" onclick="toggleMenu()">Introducción</a></li>
+    <li><a href="objetivos.html" onclick="toggleMenu()">Objetivos</a></li>
+    <li><a href="descripcion-general.html" onclick="toggleMenu()">Descripción General</a></li>
+    <li><a href="aplicaciones-ofimaticas.html" onclick="toggleMenu()">Aplicaciones Ofimáticas</a></li>
+    <li><a href="glosario.html" onclick="toggleMenu()">Glosario</a></li>
+    <li><a href="practica.html" onclick="toggleMenu()">Práctica</a></li>
+  </ul>
+</div>
+
+<section class="contenido">
+
+  <!-- DESCRIPCIÓN -->
+  <div class="card-descripcion">
+    <p class="justify">
+      La propuesta final consiste en un sitio web educativo titulado
+      <b>“Introducción a la Ofimática”</b>, diseñado como un recurso digital de apoyo
+      al aprendizaje. El sitio presenta información organizada sobre ofimática y las
+      aplicaciones Word, Excel y PowerPoint, acompañada de imágenes, íconos y elementos
+      visuales. Entre sus funciones principales se destacan la navegación intuitiva,
+      el acceso rápido a contenidos educativos y la visualización de guías y gráficos
+      informativos que facilitan la comprensión de los temas.
+    </p>
+  </div>
+  <!-- UTILIDAD -->
+  <div class="utilidad-box">
+    <h2>Utilidad del Sitio Web</h2>
+    <p class="justify">
+      La utilidad del sitio web radica en que actúa como herramienta de apoyo educativo,
+      que permite que los usuarios conozcan las definiciones más elementales de la
+      ofimática, su importancia, su uso y los beneficios que tiene en el ámbito académico.
+      Asimismo, el sitio web ofrece guías, sugerencias y explicaciones simples sobre Word,
+      Excel y PowerPoint que facilitan un aprendizaje autodirigido y mejoran el rendimiento
+      en la elaboración de documentos, hojas de cálculo y presentaciones.
+    </p>
+  </div>
+
+  <!-- IMAGEN -->
+  <div class="imagen-descripcion">
+    <img src="images/descrip1.jpg" alt="Trabajo colaborativo">
+  </div>
+
+</section>
+
+<script src="js/menu.js"></script>
+</body>
+</html>

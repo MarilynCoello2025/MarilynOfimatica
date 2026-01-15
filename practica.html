@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Práctica</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Práctica</h1>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- MENÚ -->
+<div class="menu-overlay" id="menu">
+    <div class="close-btn" onclick="toggleMenu()">✖</div>
+    <ul>
+        <li><a href="introduccion.html" onclick="toggleMenu()">Introducción</a></li>
+        <li><a href="objetivos.html" onclick="toggleMenu()">Objetivos</a></li>
+        <li><a href="descripcion-general.html" onclick="toggleMenu()">Descripción General</a></li>
+        <li><a href="aplicaciones-ofimaticas.html" onclick="toggleMenu()">Aplicaciones Ofimáticas</a></li>
+        <li><a href="glosario.html" onclick="toggleMenu()">Glosario de términos</a></li>
+        <li><a href="practica.html" onclick="toggleMenu()">Práctica</a></li>
+    </ul>
+</div>
+
+<section class="contenido">
+    <h2 class="titulo-practica">Actividad interactiva</h2>
+
+    <div class="juego-educaplay">
+        <iframe 
+            allow="fullscreen; autoplay;"
+            allowfullscreen
+            src="https://es.educaplay.com/juego/27347833-aplicaciones_ofimaticas_crucigrama.html">
+        </iframe>
+    </div>
+</section>
+
+<script src="js/menu.js"></script>
+</body>
+</html>

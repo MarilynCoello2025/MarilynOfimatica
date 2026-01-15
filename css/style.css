@@ -1,0 +1,503 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #efe6cf;
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: #d7eef7;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #2f5d7c;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+/* ================= HAMBURGUESA ================= */
+.hamburger {
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* ================= MENÚ ================= */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47,93,124,0.97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease;
+    z-index: 1000;
+}
+
+.menu-overlay.active {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-overlay li {
+    margin: 20px 0;
+}
+
+.menu-overlay a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-overlay a:hover {
+    color: #ffe08a;
+}
+
+/* ================= CONTENIDO ================= */
+.contenido {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+/* texto como antes */
+.justify {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* ================= IMÁGENES INTRO ================= */
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.imagenes img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.imagenes img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 14px 35px rgba(0,0,0,0.35);
+}
+
+/* ================= OBJETIVOS ================= */
+.objetivos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.objetivo {
+    background: linear-gradient(135deg, #eef6fb, #ffffff);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.objetivo:hover {
+    transform: translateY(-6px);
+}
+
+.objetivo h3 {
+    margin-top: 0;
+    color: #1f4e68;
+}
+
+/* ================= GLOSARIO ================= */
+.lista-glosario li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .imagenes {
+        grid-template-columns: 1fr;
+    }
+}
+/* OBJETIVO GENERAL */
+.objetivo-general {
+    background-color: #eaf6fb;
+    border-left: 6px solid #4aa3c7;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.objetivo-general h2 {
+    margin-top: 0;
+    color: #1f4e6b;
+}
+
+/* TÍTULO OBJETIVOS ESPECÍFICOS */
+.titulo-especificos {
+    margin-bottom: 25px;
+    color: #1f4e6b;
+}
+
+/* GRID DE OBJETIVOS */
+.objetivos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* TARJETAS */
+.objetivo-card {
+    background-color: #f8fcff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.objetivo-card span {
+    background-color: #4aa3c7;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* HOVER (interacción que tú querías) */
+.objetivo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* IMAGEN */
+.imagen-objetivo img {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 14px;
+    transition: transform 0.4s ease;
+}
+
+.imagen-objetivo img:hover {
+    transform: scale(1.05);
+}
+/* DESCRIPCIÓN GENERAL */
+.card-descripcion {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    margin-bottom: 45px;
+    line-height: 1.7;
+}
+
+/* GRID APLICACIONES */
+.apps-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+/* UTILIDAD */
+.utilidad-box {
+    background-color: #f5fbff;
+    padding: 30px;
+    border-left: 6px solid #4aa3c7;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.utilidad-box h2 {
+    margin-top: 0;
+    color: #1f4e6b;
+}
+
+/* IMAGEN */
+.imagen-descripcion img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+    transition:
+}
+/* APLICACIONES OFIMÁTICAS */
+.app-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+.app-card img {
+    width: 90px;
+    transition: transform 0.3s ease;
+}
+
+.app-card:hover img {
+    transform: scale(1.1);
+}
+
+.word {
+    background-color: #eaf4fb;
+}
+
+.excel {
+    background-color: #eef9f1;
+    flex-direction: row-reverse;
+	font-size: 20px
+		
+}
+
+}
+
+.powerpoint {
+    background-color: #fff1e8;
+}
+
+.app-card h2 {
+    margin-top: 0;
+    color: #2f5d7c;
+}
+
+.imagen-final img {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin: 40px auto 0;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+/* APLICACIONES OFIMÁTICAS */
+.app-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+.app-card img {
+    width: 90px;
+    transition: transform 0.3s ease;
+}
+
+.app-card:hover img {
+    transform: scale(1.1);
+}
+
+.word {
+    background-color: #eaf4fb;
+}
+
+.excel {
+    background-color: #eef9f1;
+    flex-direction: row-reverse;
+}
+
+.powerpoint {
+    background-color: #fff1e8;
+}
+
+.app-card h2 {
+    margin-top: 0;
+    color: #2f5d7c;
+}
+
+.imagen-final img {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin: 40px auto 0;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .app-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* GLOSARIO */
+.titulo-glosario {
+    color: #2f5d7c;
+    margin-bottom: 20px;
+}
+
+.lista-glosario {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-glosario li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    line-height: 1.6;
+    background-color: #f6fbff;
+    padding: 14px 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.lista-glosario li:hover {
+    transform: translateX(6px);
+}
+
+.check {
+    color: #3fa9f5;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+/* IMAGEN FINAL */
+.imagen-glosario-final img {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin: 40px auto 0;
+    border-radius: 16px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+/* ===== PRÁCTICA ===== */
+.practica {
+    text-align: center;
+}
+
+.practica-texto {
+    background-color: #f4f9fc;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 6px solid #4fa3c7;
+    margin-bottom: 30px;
+}
+
+.practica-texto h2 {
+    margin-top: 0;
+    color: #1f4e68;
+	text-align: center;
+}
+
+.practica-texto p {
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.juego-educaplay {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.juego-educaplay iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 550px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.juego-educaplay iframe:hover {
+    transform: scale(1.02);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .juego-educaplay iframe {
+        height: 420px;
+    }
+}
+
+.titulo-practica {
+    color: #1f4e68;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.video-contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+}
+
+.video-contenedor iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}

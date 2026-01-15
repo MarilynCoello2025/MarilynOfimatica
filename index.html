@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SOLO ESTE CSS -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div class="box" id="login">
+        <h3>🔒 Acceso seguro</h3>
+
+        <input 
+            type="password" 
+            id="clave" 
+            placeholder="Ingrese su contraseña"
+            onkeydown="enterPresionado(event)"
+        >
+
+        <button onclick="validar()">Entrar</button>
+
+        <div class="error" id="error"></div>
+    </div>
+
+    <div class="box bienvenida" id="bienvenida" style="display:none;">
+        <h2>✨ Bienvenido José</h2>
+        <p>Redirigiendo...</p>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
