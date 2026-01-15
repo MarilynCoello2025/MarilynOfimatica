@@ -305,11 +305,7 @@ header h1 {
     background-color: #eef9f1;
     flex-direction: row-reverse;
 	font-size: 20px
-		
 }
-
-}
-
 .powerpoint {
     background-color: #fff1e8;
 	font-size: 20px
@@ -354,18 +350,6 @@ header h1 {
     transform: scale(1.1);
 }
 
-.word {
-    background-color: #eaf4fb;
-}
-
-.excel {
-    background-color: #eef9f1;
-    flex-direction: row-reverse;
-}
-
-.powerpoint {
-    background-color: #fff1e8;
-}
 
 .app-card h2 {
     margin-top: 0;
@@ -503,4 +487,5 @@ header h1 {
     border-radius: 14px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
+
 
